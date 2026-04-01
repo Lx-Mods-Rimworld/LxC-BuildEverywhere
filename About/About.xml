@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>LxC - Build Everywhere</name>
+  <author>Lexxers (Original: John Midnight)</author>
+  <url>https://github.com/Lx-Mods-Rimworld/LxC-BuildEverywhere</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <packageId>Lexxers.BuildEverywhere</packageId>
+  <description>Allows building on terrain that normally doesn't support it: shallow water, chest-deep water, marsh, marshy soil, soft sand, and mud.
+
+Adds Light, Medium, Heavy, and Diggable affordances to these terrain types so you can place structures, floors, and furniture on them.
+
+Originally created by John Midnight. Updated for RimWorld 1.6 by Lexxers.
+
+Uses XML patches for maximum mod compatibility.</description>
+  <loadAfter>
+    <li>ludeon.rimworld</li>
+  </loadAfter>
+</ModMetaData>

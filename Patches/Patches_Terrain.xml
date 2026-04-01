@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- ==================== Water: Chest-Deep ==================== -->
+  <!-- Covers: WaterMovingChestDeep (inherits from WaterChestDeepBase) -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[@Name="WaterChestDeepBase"]/affordances</xpath>
+    <value>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </value>
+  </Operation>
+
+  <!-- ==================== Water: Shallow ==================== -->
+  <!-- Covers: WaterShallow, WaterOceanShallow, WaterMovingShallow, Marsh -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[@Name="WaterShallowBase"]/affordances</xpath>
+    <value>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </value>
+  </Operation>
+
+  <!-- ==================== Marshy Soil ==================== -->
+  <!-- Already has: Light, GrowSoil, Diggable, Bridgeable -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="MarshyTerrain"]/affordances</xpath>
+    <value>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </value>
+  </Operation>
+
+  <!-- ==================== Soft Sand ==================== -->
+  <!-- Already has: Light, Diggable -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="SoftSand"]/affordances</xpath>
+    <value>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </value>
+  </Operation>
+
+  <!-- ==================== Mud ==================== -->
+  <!-- Already has: Bridgeable, WaterproofConduitable -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="Mud"]/affordances</xpath>
+    <value>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </value>
+  </Operation>
+
+</Patch>
