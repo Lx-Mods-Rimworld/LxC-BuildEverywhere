@@ -14,5 +14,5 @@ obj/
 Thumbs.db
 .DS_Store
 
-# Steam
-About/PublishedFileId.txt
+# OS
+# (PublishedFileId.txt tracked intentionally for Steam updates)
